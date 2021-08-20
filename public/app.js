@@ -23,7 +23,7 @@ let quote = await getData(API_URLS.random)
 let category = await getData(API_URLS.categories)
 
 quoteContainer.innerHTML = `
-<img src="${quote.icon_url}" alt="logo">
+<img src="img/logo.png" width="180" height="180" alt="logo">
 <h3>${quote.value}</h3>
 <small>Created At: ${formatDate(quote.created_at)}</small>
 <small>Updated At: ${formatDate(quote.updated_at)}</small>
